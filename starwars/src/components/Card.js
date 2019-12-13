@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import CharCard from "./CharCard";
 
 
 function Character(){
@@ -23,7 +24,14 @@ function Character(){
     <div className="cardComponent">
     {card.map(card => {
     return (
-    <h1> Name: {card.name} </h1>
+<CharCard
+name = {card.name}
+height ={card.height}
+gender = {card.gender}
+mass= {card.mass}
+/>
+
+
     );
   })}
 </div>
