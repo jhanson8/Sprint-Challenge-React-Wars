@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import CharCard from "./CharCard";
-import { CharCardStyle} from "./styles.js";
+
 
 function Character(){
   const [card, setCard] = useState([]);
