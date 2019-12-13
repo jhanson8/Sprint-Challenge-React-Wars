@@ -1,16 +1,20 @@
 /* jshint esversion: 6 */
 import React from "react";
+import { MyHTwo, MyP, MyDiv} from "./styles.js";
 
 const CharCard = props => {
   return (
-    <div className="char-list">
-      <h2>Name: {props.name}</h2>
-      <p>Height: {props.height}</p>
+    <divStyle className="char-list">
+      <MyHTwo>Name: {props.name}</MyHTwo>
+      <MyDiv>
+      <MyP>Height: {props.height}</MyP>
 
-        <p>Gender: {props.gender}</p>
-        <p>Mass:{props.mass}</p>
 
-    </div>
+        <MyP>Gender: {props.gender}</MyP>
+        <MyP>Mass:{props.mass}</MyP>
+        </MyDiv>
+
+    </divStyle>
   );
 };
 export default CharCard;
